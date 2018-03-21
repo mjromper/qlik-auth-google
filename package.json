@@ -6,9 +6,9 @@
   "author": "Rikard Braathen",
   "license": "MIT",
   "dependencies": {
-    "googleapis": ">= 2.1.5",
-    "express": ">= 4.13.3",
-    "qlik-auth": ">= 1.1.0"
+    "googleapis": "2.1.5",
+    "express": "4.13.3",
+    "qlik-auth": "1.1.0"
   },
   "engine": "node >= 0.4.0",
   "keywords": [
