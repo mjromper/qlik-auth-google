@@ -36,8 +36,8 @@ if(!(Test-Path -Path "$target\node_modules")) {
     # check if module has been downloaded
     if(!(Test-Path -Path "$target\src")) {
         New-Item -Path "$target\src" -Type directory | Out-Null
-        Invoke-WebRequest "http://raw.githubusercontent.com/braathen/qlik-auth-google/master/service.js" -OutFile "$target\src\service.js"
-        Invoke-WebRequest "http://raw.githubusercontent.com/braathen/qlik-auth-google/master/package.json" -OutFile "$target\package.json"
+        Invoke-WebRequest "http://raw.githubusercontent.com/mjromper/qlik-auth-google/master/service.js" -OutFile "$target\src\service.js"
+        Invoke-WebRequest "http://raw.githubusercontent.com/mjromper/qlik-auth-google/master/package.json" -OutFile "$target\package.json"
     }
 
     # check if npm has been unzipped already
@@ -75,7 +75,7 @@ DisplayName=Google Auth
 ExecType=nodejs
 ExePath=Node\node.exe
 Script=Node\google-auth\src\service.js
-    
+
 [google-auth.parameters]
 domain=
 user_directory=
